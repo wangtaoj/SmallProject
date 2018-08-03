@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans>
+
+   <bean id="a" class="com.waston.bean.A" scope="prototype">
+       <property name="name" value="waston"></property>
+       <property name="age" value="20"></property>
+   </bean>
+
+    <bean id = "b" class = "com.waston.bean.B">
+        <property name="name" value="jerry"></property>
+        <property name="a" ref="a"></property>
+    </bean>
+</beans>
